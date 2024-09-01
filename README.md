@@ -1,68 +1,19 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
 
+<!-- about  -->
 
-![login page](./images/snappy_login.png)
+This is a chat application based on client and server model.<br>
 
-![home page](./images/snappy.png)
+Overview<br>
+    -User Authentication: Users can register and log in to access their chat history.<br>
+    -Real-Time Messaging: Users can send and receive messages in real-time.<br>
+    -Message Storage: Messages are stored in MongoDB and can be retrieved on login.<br>
+    -Responsive Design: The app is designed to work on both desktop and mobile devices.<br>
 
-## Installation Guide
-
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
-
-Both should be installed and make sure mongodb is running.
-### Installation
-
-#### First Method
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
-
-Now install the dependencies
-```shell
-cd server
-yarn
-cd ..
-cd public
-yarn
-```
-We are almost done, Now just start the development server.
-
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
-
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
-```
-Done! Now open localhost:3000 in your browser.
-
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
-
-```shell
-docker compose build --no-cache
-```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
-```
-now open localhost:3000 in your browser.
+Technologies Used<br>
+    -Frontend: React, React Router, styled-components<br>
+    -Backend: Node.js, Express.js<br>
+    -Database: MongoDB, Mongoose<br>
+    -Real-Time Communication: Socket.IO<br>
+    -State Management: React Hooks<br>
+    -Authentication: JSON Web Tokens (JWT)<br>
+    -Styling: CSS<br>
